@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>敦煌故事</title>
+    <style>
+        .nav {
+            height: 40px;
+            background-image: url("STUDY/images/dunhuang.jpg");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        body {
+            background-color: rgb(161, 81, 24);
+        }
+
+        .btli {
+            float:left;
+            width: 100px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .navlist a {
+            color:white;
+            display:block;
+        }
+        .navlist a:hover {
+            background-color:transparent;
+        }
+        .droplist{
+            background-color: rgb(178, 87, 87);
+            box-shadow:0 1px 2px #333;
+            display:none;
+            border-radius:6px;
+            overflow:hidden;
+            position:absolute;
+        }
+        .btli:hover .droplist {
+            display:block;
+        }
+        .droplist li {
+            border-top:1px solid #666;
+        }
+        .main {
+            width: 480px;
+            border:1px solid black;
+            margin:20px auto;
+        }
+        .picture {
+            margin: 10px auto;
+            
+        }
+        .fixed {
+            position:fixed;
+            bottom: 0;
+            right:0;
+            width:50px;
+            font-size:12px;
+            border:2px solid rgb(159, 73, 12);
+            border-radius: 6px;
+        }
+        .footer {
+            text-align: center;
+            background-color: rgb(159, 73, 12);
+            color:white;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="navlist">
+            <li class="btli"><a href="#">首页</a></li>
+                
+            <li class="btli"><a href="#">探索</a>
+                <ul class="droplist">
+                    <li><a href="#">视频</a></li>
+                    <li><a href="#">艺术形式</a></li>
+                    <li><a href="#">朝代</a></li>
+                    <li><a href="#">颜色</a></li>
+                    <li><a href="#">全景洞窟</a></li>
+                </ul>
+            </li>
+            <li class="btli"><a href="#">游览</a>
+                <ul class="droplist">
+                    <li><a href="#">故事</a></li>
+                    <li><a href="#">导览</a></li>
+                    <li><a href="#">特色体验</a></li>
+                </ul>
+            </li>
+            <li class="btli"><a href="#">新文创</a>
+                <ul class="droplist">
+                    <li><a href="#">岁时节令</a></li>
+                    <li><a href="#">故宫特展</a></li>
+                    <li><a href="#">声动画语</a></li>
+                    <li><a href="#">文创馆</a></li>
+                    <li><a href="#">动画剧</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <table class="picture">
+        <tr>
+            <td><img  src="images\1.jpg" width="200" /></td>
+            <td><img  src="images\2.jpg" width="200" /></td>
+            <td><img  src="images\3.jpg" width="200" /></td>
+            <td><img  src="images\4.jpg" width="200" /></td>
+        </tr>
+        <tr>
+            <td><img  src="images\6.jpg" width="200" /></td>
+            <td><img  src="images\7.jpg" width="200" /></td>
+            <td><img  src="images\8.jpg" width="200" /></td>
+            <td><img  src="images\9.jpg" width="200" /></td>
+        </tr>
+         
+    </table>
+    <div class="fixed">
+        <p>云游敦煌，走近千年文化之美</p>
+    </div>
+    <div class="footer">
+        <p>风吹沙粒鸣，又见繁华景</p>
+        <p>掠影随光现，敦煌动人心</p>
+        <p>一起探秘经典壁画故事，感受敦煌的魅力！</p>
+    </div>
+</body>
+
+</html>
